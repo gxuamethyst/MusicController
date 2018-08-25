@@ -1,18 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ImageButton
+        android:id="@+id/start_button"
+        style="@style/custom_button_style"
+        android:layout_width="@dimen/custom_button_width"
+        android:layout_height="@dimen/custom_button_height"
+        android:src="@drawable/ic_queue_music" />
 
-</android.support.constraint.ConstraintLayout>
+    <ImageButton
+        android:id="@+id/play_button"
+        style="@style/custom_button_style"
+        android:layout_width="@dimen/custom_button_width"
+        android:layout_height="@dimen/custom_button_height"
+        android:layout_toEndOf="@id/start_button"
+        android:src="@drawable/ic_play_circle_outline" />
+
+    <ImageButton
+        android:id="@+id/last_button"
+        style="@style/custom_button_style"
+        android:layout_width="@dimen/custom_button_width"
+        android:layout_height="@dimen/custom_button_height"
+        android:layout_below="@id/start_button"
+        android:src="@drawable/ic_skip_previous" />
+
+    <ImageButton
+        android:id="@+id/next_button"
+        style="@style/custom_button_style"
+        android:layout_width="@dimen/custom_button_width"
+        android:layout_height="@dimen/custom_button_height"
+        android:layout_below="@id/start_button"
+        android:layout_toEndOf="@id/last_button"
+        android:src="@drawable/ic_skip_next" />
+
+</RelativeLayout>

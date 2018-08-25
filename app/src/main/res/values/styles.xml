@@ -8,4 +8,10 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="custom_button_style">
+        <item name="android:layout_margin">@dimen/default_margin</item>
+        <item name="android:background">?android:selectableItemBackgroundBorderless</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
 </resources>
