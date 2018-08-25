@@ -7,10 +7,26 @@
     tools:context=".MainActivity">
 
     <ImageButton
+        android:id="@+id/volume_down_button"
+        style="@style/custom_button_style"
+        android:layout_width="@dimen/custom_button_width"
+        android:layout_height="@dimen/custom_button_height"
+        android:src="@drawable/ic_volume_down" />
+
+    <ImageButton
+        android:id="@+id/volume_up_button"
+        style="@style/custom_button_style"
+        android:layout_width="@dimen/custom_button_width"
+        android:layout_height="@dimen/custom_button_height"
+        android:layout_toEndOf="@id/volume_down_button"
+        android:src="@drawable/ic_volume_up" />
+
+    <ImageButton
         android:id="@+id/start_button"
         style="@style/custom_button_style"
         android:layout_width="@dimen/custom_button_width"
         android:layout_height="@dimen/custom_button_height"
+        android:layout_below="@id/volume_down_button"
         android:src="@drawable/ic_queue_music" />
 
     <ImageButton
@@ -18,8 +34,9 @@
         style="@style/custom_button_style"
         android:layout_width="@dimen/custom_button_width"
         android:layout_height="@dimen/custom_button_height"
+        android:layout_below="@id/volume_down_button"
         android:layout_toEndOf="@id/start_button"
-        android:src="@drawable/ic_play_circle_outline" />
+        android:src="@drawable/ic_play_arrow" />
 
     <ImageButton
         android:id="@+id/last_button"

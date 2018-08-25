@@ -7,6 +7,8 @@ public class Constants {
     public static final String ACTION_PLAY = "play";
     public static final String ACTION_LAST = "last";
     public static final String ACTION_NEXT = "next";
+    public static final String ACTION_VOLUME_DOWN = "volume_down";
+    public static final String ACTION_VOLUME_UP = "volume_up";
 
     public static final String SERVER_URL = "http://192.168.0.2/music_controller/";
 

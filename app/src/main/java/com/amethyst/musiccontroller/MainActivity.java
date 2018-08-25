@@ -44,12 +44,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.play_button).setOnClickListener(this);
         findViewById(R.id.last_button).setOnClickListener(this);
         findViewById(R.id.next_button).setOnClickListener(this);
+        findViewById(R.id.volume_down_button).setOnClickListener(this);
+        findViewById(R.id.volume_up_button).setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         String action = "";
         switch (v.getId()) {
+            case R.id.volume_down_button:
+                action = Constants.ACTION_VOLUME_DOWN;
+                break;
+            case R.id.volume_up_button:
+                action = Constants.ACTION_VOLUME_UP;
+                break;
             case R.id.start_button:
                 action = Constants.ACTION_START;
                 break;
